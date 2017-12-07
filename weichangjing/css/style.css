@@ -1,3 +1,8 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 html, body {
     position: relative;
     height: 100%;
@@ -91,15 +96,15 @@ body {
 }
 .main img:nth-of-type(2){
     width: 76%;
+    margin-bottom: 20px;
 }
 .main p{
     background:url("../img/9.png");
-    background-size: 100%;
+    background-size: contain;
     width:207px;
     height: 24px;
     margin:auto;
-    margin-top: 20px;
-    font-size:17px;
+    font-size:16px;
     font-family:迷你简菱心;
     line-height:24px;
 
@@ -110,4 +115,5 @@ body {
 .footer p{
     color:#08cbad;
     font-family:迷你简菱心;
+    margin-bottom: 13px;
 }
