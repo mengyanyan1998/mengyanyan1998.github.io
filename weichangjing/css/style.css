@@ -39,10 +39,11 @@ body {
     transform: rotate(90deg);
 }
 
+
 /*
 *第一屏样式开始
 */
-.s1,.s2{
+.s1,.s2,.s3{
     background:url("../img/bj.png");
     position:relative;
     height: 100%;
@@ -54,26 +55,31 @@ body {
     width: 34px;
     left:45px;
     top:124px;
+    animation: swing 3s infinite;
 }
 .header img:nth-of-type(2){
     width: 66px;
     right:35px;
     top:87px;
+    animation: swing 3s infinite;
 }
 .header img:nth-of-type(3){
     width: 58px;
     left:30px;
     bottom:195px;
+    animation: swing 3s infinite;
 }
 .header img:nth-of-type(4){
     width: 50px;
     right:45px;
     bottom:220px;
+    animation: swing 5s infinite;
 }
 .header img:nth-of-type(5){
     width: 60%;
     top: 25%;
     margin-left:-30%;
+    animation: pulse 4s infinite;
 }
 
 .main{
@@ -119,16 +125,18 @@ body {
 .footer img:nth-of-type(2){
     margin-left: -73%;
 }
+
+
 /*
 *第二屏样式开始
 */
-.s2 h2{
+.s2 h2,.s3 h2{
     color:#04d1b2;
     font-size:24px;
     padding-top: 16%;
     margin-bottom: 22px;
 }
-.s2::before {
+.s2::before,.s3::before {
     content: "";
     background: url("../img/14.png");
     background-size:contain;
@@ -138,7 +146,7 @@ body {
     left:10%;
     top: 10%;
 }
-.s2::after {
+.s2::after,.s3::after {
     content: "";
     background: url("../img/13.png");
     background-size:contain;
@@ -148,7 +156,7 @@ body {
     right:10%;
     top: 10%;
 }
-.s2 small{
+.s2 small,.s3 small{
     display: block;
     font-size:12px;
     margin-top: 10px;
