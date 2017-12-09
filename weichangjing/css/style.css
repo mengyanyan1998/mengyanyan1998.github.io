@@ -82,18 +82,19 @@ body {
     animation: pulse 4s infinite;
 }
 
-.main{
+.s1 .main{
     padding-top: 54%;
     position: relative;
 }
-.main img:nth-of-type(1){
+.s1 .main img:nth-of-type(1){
     width: 42%;
 }
-.main img:nth-of-type(2){
+.s1 .main img:nth-of-type(2){
     width: 76%;
     margin-bottom: 20px;
+    animation: pulse 4s infinite;
 }
-.main p{
+.s1 .main p{
     background:url("../img/9.png");
     background-size: contain;
     width:207px;
@@ -204,4 +205,59 @@ body {
     position: absolute;
     bottom:-10px;
     line-height:25px;
+}
+
+/*
+*第三屏样式开始
+*/
+.s3 p{
+    background:url("../img/15.png");
+    background-size:cover;
+    text-align: center;
+    color:#16c38b;
+    position: absolute;
+    left:50%;
+    right:auto;
+    top:42%;
+    margin-left: -67px;
+}
+.s3 .p1{
+    width: 63px;
+    height: 63px;
+    font-size: 18px;
+    line-height: 63px;
+    font-weight:bold;
+}
+.s3 .main p:nth-of-type(1){
+    top:28%;
+    left:37%;
+}
+.s3 .main p:nth-of-type(1){
+    top:28%;
+    left:38%;
+}
+.s3 .main p:nth-of-type(2){
+    top:28%;
+    left:78%;
+}
+.s3 .main p:nth-of-type(3){
+    top:48%;
+    left:95%;
+}
+.s3 .main p:nth-of-type(4){
+    top:66%;
+    left:78%;
+}
+.s3 .main p:nth-of-type(5){
+    top:66%;
+    left:38%;
+}
+.s3 .main p:nth-of-type(6){
+    top:48%;
+    left:24%;
+}
+.s3 .p2{
+    width: 134px;
+    height: 134px;
+    line-height:  134px;
 }
