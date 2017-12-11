@@ -39,11 +39,40 @@ body {
     transform: rotate(90deg);
 }
 
+/*
+*插入音频标签的样式
+*/
+#mp3{
+    position: absolute;
+    top:3%;
+    right:5%;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    z-index:100;
+    background:#000;
+    border:4px solid rgba(115, 105, 105, 0.71);
+    text-align: center;
+    line-height: 30px;
+    transition-timing-function: linear;
+    animation:mymove 5s infinite;
+
+}
+#mp3 img{
+    width: 10px;
+}
+
+@keyframes mymove {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
+
 
 /*
 *第一屏样式开始
 */
-.s1,.s2,.s3{
+.s1,.s2,.s3,.s4{
     background:url("../img/bj.png");
     position:relative;
     height: 100%;
@@ -131,13 +160,13 @@ body {
 /*
 *第二屏样式开始
 */
-.s2 h2,.s3 h2{
+.s2 h2,.s3 h2,.s4 h2{
     color:#04d1b2;
     font-size:24px;
     padding-top: 16%;
     margin-bottom: 22px;
 }
-.s2::before,.s3::before {
+.s2::before,.s3::before,.s4::before {
     content: "";
     background: url("../img/14.png");
     background-size:contain;
@@ -147,7 +176,7 @@ body {
     left:10%;
     top: 10%;
 }
-.s2::after,.s3::after {
+.s2::after,.s3::after,.s4::after {
     content: "";
     background: url("../img/13.png");
     background-size:contain;
@@ -157,7 +186,7 @@ body {
     right:10%;
     top: 10%;
 }
-.s2 small,.s3 small{
+.s2 small,.s3 small,.s4 small{
     display: block;
     font-size:12px;
     margin-top: 10px;
@@ -210,7 +239,7 @@ body {
 /*
 *第三屏样式开始
 */
-.s3 p{
+.s3 .main p{
     background:url("../img/15.png");
     background-size:cover;
     text-align: center;
@@ -218,10 +247,10 @@ body {
     position: absolute;
     left:50%;
     right:auto;
-    top:42%;
+    top:38%;
     margin-left: -67px;
 }
-.s3 .p1{
+.s3 .main .p1{
     width: 63px;
     height: 63px;
     font-size: 18px;
@@ -229,35 +258,81 @@ body {
     font-weight:bold;
 }
 .s3 .main p:nth-of-type(1){
-    top:28%;
+    top:25%;
     left:37%;
 }
 .s3 .main p:nth-of-type(1){
-    top:28%;
-    left:38%;
+    top:25%;
+    left:40%;
 }
 .s3 .main p:nth-of-type(2){
-    top:28%;
-    left:78%;
+    top:25%;
+    left:76%;
 }
 .s3 .main p:nth-of-type(3){
-    top:48%;
-    left:95%;
+    top:43%;
+    left:93%;
 }
 .s3 .main p:nth-of-type(4){
-    top:66%;
-    left:78%;
+    top:61%;
+    left:76%;
 }
 .s3 .main p:nth-of-type(5){
-    top:66%;
-    left:38%;
+    top:61%;
+    left:40%;
 }
 .s3 .main p:nth-of-type(6){
-    top:48%;
-    left:24%;
+    top:43%;
+    left:26%;
 }
-.s3 .p2{
+.s3 .main .p2{
     width: 134px;
     height: 134px;
     line-height:  134px;
+}
+.s3 .footer{
+    width: 273px;
+    margin:0 auto;
+    margin-top: 105%;
+    border-left:2px solid #16c0a6;
+}
+.s3 .footer p{
+    text-align: left;
+    font-size: 14px;
+    color:#16c0a6;
+    line-height: 26px;
+    margin-left: 15px;
+}
+
+/*
+*第四屏样式开始
+*/
+.s4 .main{
+    width: 80%;
+    margin:0 auto;
+}
+.s4 .bj{
+    width: 82%;
+    position: absolute;
+    margin-left: -41%;
+}
+.s4{
+    color:#fff;
+}
+.s4 .top{
+    position: relative;
+}
+.s4 .top img{
+    width: 16px;
+    line-height: 16px;
+}
+
+.s4 .top span:nth-of-type(1){
+    font-size: 14px;
+    color:#29edab;
+}
+.s4 .top span:nth-of-type(2){
+    font-size: 14px;
+    color:#00c2ff;
+    margin-left: 38px;
 }

@@ -21,3 +21,23 @@ var swiper = new Swiper('.swiper-container', {
         }
     }
 });
+
+
+//插入音乐JS代码
+var mp3 = document.querySelector("#mp3");
+var mp3Btn = document.querySelector("#mp3Btn");
+
+mp3.onclick = function(){
+    if (mp3.play){
+        mp3Btn.animationPlayState='paused'
+        mp3.pause()
+        console.log("if")
+    }
+    else{
+        mp3.play();
+        mp3Btn.animationPlayState='running'
+        console.log("else")
+    }
+}
+
+
