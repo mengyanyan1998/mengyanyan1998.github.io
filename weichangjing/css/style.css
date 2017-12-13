@@ -192,7 +192,7 @@ body {
     padding-top: 16%;
     margin-bottom: 22px;
 }
-.s2::before,.s3::before,.s4::before,.s5::before,.s6::before,.s7::before {
+.s2 h2::before,.s3 h2::before,.s4 h2::before,.s5 h2::before,.s6 h2::before,.s7 h2::before {
     content: "";
     background: url("../img/14.png");
     background-size:contain;
@@ -200,9 +200,9 @@ body {
     height: 20px;
     position: absolute;
     left:10%;
-    top: 10%;
+    top: 58%;
 }
-.s2::after,.s3::after,.s4::after,.s5::after,.s6::after,.s7::after {
+.s2 h2::after,.s3 h2::after,.s4 h2::after,.s5 h2::after,.s6 h2::after,.s7 h2::after {
     content: "";
     background: url("../img/13.png");
     background-size:contain;
@@ -210,7 +210,7 @@ body {
     height: 20px;
     position: absolute;
     right:10%;
-    top: 10%;
+    top: 58%;
 
 }
 .s2 small,.s3 small,.s4 small,.s5 small,.s6 small,.s7 small{
