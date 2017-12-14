@@ -1,0 +1,458 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container-flip .swiper-slide{
+    overflow: hidden;
+}
+
+/*自定义样式开始*/
+.swiper-button-next{
+    left:50%;
+    right:auto;
+    margin-left:-13.5px;
+    top:auto;
+    bottom:5%;
+    transform: rotate(-90deg);
+    width: 20px;
+    height: 33px;
+    background-size: contain;
+    animation: buttonnext 1s infinite alternate;
+}
+
+/*第一屏样式开始*/
+.s1,.s2,.s3,.s4,.s5,.s6,.ss3,.s7,.s8{
+    background:url("../img/bj.jpg");
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.s1 img{
+    position: absolute;
+}
+.s1 .sm1{
+    left: 11%;
+    top: 15%;
+}
+.s1 .sm2{
+    right: 15%;
+    top: 1%;
+    width: 33%;
+    transform: rotate(2deg);
+}
+.s1 .sm3{
+    right: 10%;
+    top: 8%;
+    width: 31%;
+    transform: rotate(0deg);
+}
+.s1 .sm4{
+    right: 0%;
+    top: -2%;
+    width: 28%;
+    transform: rotate(0deg);
+}
+.s1 h1 img:nth-of-type(1){
+    width: 4%;
+    top: 13%;
+    left: 28%;
+}
+.s1 h1 img:nth-of-type(2){
+    width: 25%;
+    top: 11%;
+    left: 35%;
+}
+.s1 h1 img:nth-of-type(3){
+    width: 24%;
+    top: 31%;
+    left: 18%;
+}
+.s1 h1 img:nth-of-type(4){
+    width: 28%;
+    top: 32%;
+    left: 47%;
+}
+.s1 .main{
+    position: absolute;
+    bottom:23%;
+    color:#f5b96d;
+    left: 50%;
+    margin-left: -25%;
+    font-size: 16px;
+}
+.s1 .footer,.s3 .footer,.s4 .footer,.s5 .footer,.ss3 .footer,.s7 .footer,.s8 .footer{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 15%;
+    margin-left: -50%;
+}
+.s1 .footer img,.s3 .footer img,.s4 .footer img,.s5 .footer img,.ss3 .footer img,.s7 .footer img,.s8 .footer img{
+    width: 100%;
+    height: 100%;
+    animation: flash infinite;
+}
+.s1 .footer img:nth-of-type(1),.s3 .footer img:nth-of-type(1),.s4 .footer img:nth-of-type(1),.s5 .footer img:nth-of-type(1),.ss3 .footer img:nth-of-type(1),.s7 .footer img:nth-of-type(1),.s8 .footer img:nth-of-type(1){
+    margin-left: 2%;
+}
+
+
+/*
+*第二屏样式开始
+*/
+.s2 h2,.s3 h2,.s4 h2,.s5 h2,.s6 h2,.ss3 h2,.s7 h2,.s8 h2{
+    background:url("../img/6.png");
+    background-size: contain;
+    width: 60%;
+    height: 11%;
+    margin: auto;
+    line-height: 104px;
+    margin-top:10%;
+    color:gold;
+    margin-bottom:7%;
+    animation: rubberBand infinite;
+}
+.s2 .main img{
+    width: 100%;
+    position: absolute;
+    margin-left: -50%;
+    bottom:0;
+}
+.s2 .text{
+    color:#fff;
+    width: 80%;
+    margin:auto;
+    text-align: left;
+}
+.s2 p{
+    line-height: 27px;
+    font-size: 18px;
+    color:#f5b96d;
+}
+.s2 .text span{
+    position: absolute;
+    bottom:9%;
+    font-size: 26px;;
+    font-family: 华文行楷;
+    text-align: center;
+    color:gold;
+}
+.s3 .main-t img{
+    position: absolute;
+    width: 80%;
+    margin-left: -40%;
+}
+.s3 .main-t img:nth-of-type(1){
+    transform: rotate(-7deg);
+}
+.s3 .main-t p{
+    position: absolute;
+    color:#000;
+    font-size:18px;
+    font-family:华文行楷;
+    width: 70%;
+    left: 50%;
+    margin-left: -35%;
+    top: 26%;
+}
+.s3 .main-b img{
+    position: absolute;
+    height: 28%;
+    width: 80%;
+    margin-left: -40%;
+    bottom: 14%;
+    border:5px solid #fbde72;
+
+}
+.s3 .footer img{
+    position: absolute;
+}
+
+/*
+*第三屏分屏样式开始
+*/
+.ss3 .footer img{
+    position: absolute;
+}
+.ss3 .main-t{
+    width: 80%;
+    height: 25%;
+    border:5px solid #fbde72;
+}
+.ss3 .main-c h3,p{
+    color:#fbde72;
+
+}
+.ss3 h3{
+    font-family:华文行楷;
+    font-size: 28px;
+}
+.ss3 p{
+    font-size: 14px;
+    width: 80%;
+    margin:auto;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.ss3 .main-b{
+    width: 80%;
+    margin:auto;
+}
+.ss3 .main-b img{
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+    height: 100px;
+    border: 3px solid #fff;
+}
+.ss3 .main-b img:nth-of-type(1){
+    margin-left: 0;
+}
+
+/*
+*第四屏样式开始
+*/
+.s4 .ctn{
+    width: 2px;
+    background-color:#fbde72;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+}
+.s4 .tit img{
+    width:3%;
+    position: absolute;
+    margin-left: -1.5%;
+}
+.s4 .tit img:nth-of-type(1){
+    top:22%;
+}
+.s4 .tit img:nth-of-type(2){
+    top:30%;
+}
+.s4 .tit img:nth-of-type(3){
+    top:38%;
+}
+.s4 .tit img:nth-of-type(4){
+    top:46%;
+}
+.s4 .tit img:nth-of-type(5){
+    top:54%;
+}
+.s4 .tit img:nth-of-type(6){
+    top:62%;
+}
+.s4 .tit img:nth-of-type(7){
+    top:70%;
+}
+.s4 .tit img:nth-of-type(8){
+    top:78%;
+}
+.s4 .stxt{
+    color:#fbde72;
+    position: absolute;
+    text-align: left;
+}
+.s4 .stxt p{
+    line-height:5px;
+}
+.s4 .stxt p:nth-of-type(1){
+    font-size: 16px;
+}
+.s4 .stxt p:nth-of-type(2){
+    font-family:华文行楷;
+    font-size: 20px;
+}
+.s4 .stxt:nth-of-type(1){
+    top: 21%;
+   right:24%;
+}
+.s4 .stxt:nth-of-type(2){
+    top: 29%;
+    left:6%;
+    text-align: right;
+}
+.s4 .stxt:nth-of-type(3){
+    top: 37%;
+    right:24%;
+}
+.s4 .stxt:nth-of-type(4){
+    top: 45%;
+    left:24%;
+    text-align: right;
+}
+.s4 .stxt:nth-of-type(5){
+    top: 52%;
+    right:24%;
+}
+.s4 .stxt:nth-of-type(6){
+    top: 61%;
+    left:11%;
+    text-align: right;
+}
+.s4 .stxt:nth-of-type(7){
+    top: 69%;
+    right:24%;
+}
+.s4 .stxt:nth-of-type(8){
+    top: 77%;
+    left:23%;
+    text-align: right;
+}
+.s4 .footer img{
+    position: absolute;
+}
+
+/*
+*第五屏样式开始
+*/
+.s5 .main{
+    width: 90%;
+    margin:auto;
+}
+.s5 .main img:not(.im0){
+    width: 50%;
+    float: left;
+    height:236px;
+}
+.s5 .im0{
+    position: absolute;
+    width: 20%;
+    top:50%;
+    left:50%;
+    margin-left: -10%;
+}
+.s5 .footer img{
+    position: absolute;
+}
+
+/*
+*第六屏样式开始
+*/
+.s6 .img1{
+    position: absolute;
+    top:4%;
+    right:-15%;
+    width: 55%;
+    transform: rotate(70deg);
+    z-index: 100;
+}
+.s6 .img2{
+    position: absolute;
+    width: 73%;
+    bottom: 9%;
+    margin-left: -40%;
+    transform: rotate(14deg);
+}
+.s6 .imgs img{
+    position: absolute;
+    width: 30%;
+    border:5px solid #fff;
+}
+.s6 .imgs img:nth-of-type(1){
+    top: 29%;
+    left: 24%;
+    transform: rotate(16deg);
+}
+.s6 .imgs img:nth-of-type(2){
+    top: 39%;
+    left: 51%;
+    transform: rotate(39deg);
+}
+.s6 .imgs img:nth-of-type(3){
+    top: 56%;
+    left: 39%;
+    transform: rotate(16deg);
+}
+.s6 .imgs img:nth-of-type(4){
+    top: 47%;
+    left: 11%;
+    transform: rotate(82deg);
+}
+.s6 .imgs img:nth-of-type(5){
+    top: 65%;
+    left: 11%;
+    transform: rotate(-57deg);
+}
+
+/*
+*第七屏样式开始
+*/
+.s7 a img{
+    width: 80%;
+    border:5px solid #fbde72;
+    margin-bottom: 20px;
+}
+.s7 .text{
+    width: 80%;
+    margin: auto;
+}
+.s7 .text p{
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.s7 .footer img{
+    position: absolute;
+}
+
+/*
+*第八屏样式开始
+*/
+.s8 input{
+    width: 80%;
+    height: 10%;
+    margin-top: 10px;
+    padding-left:20px;
+    font-size: 20px;
+}
+.s8 button{
+    width: 86%;
+    height: 10%;
+    background:#fbde72;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.s8 .sm{
+    position: absolute;
+    width: 28%;
+    top: 0%;
+    right: -8%;
+    transform: rotate(77deg);
+}
+.s8 .footer img{
+    position: absolute;
+}
