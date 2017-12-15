@@ -362,7 +362,7 @@ body {
 .sim1 img:nth-of-type(2){
     position: absolute;
     width: 115px;
-    top: 22%;
+    top: 148px;
     left: 13%;
     border-radius: 50%;
 }
@@ -372,14 +372,14 @@ body {
 .sim2 img:nth-of-type(2){
     position: absolute;
     width: 115px;
-    top: 42%;
+    top: 278px;
     right: 13%;
     border-radius: 50%;
 }
 .sim3 img:nth-of-type(2){
     position: absolute;
     width: 115px;
-    top:61%;
+    top:408px;
     left:13%;
     border-radius: 50%;
 }
@@ -387,7 +387,7 @@ body {
     position: absolute;
     color: #fbde72;
     font-size: 30px;
-    top: 21%;
+    top: 140px;
     right: 19%;
     font-weight: bold;
 }
@@ -395,7 +395,7 @@ body {
     position: absolute;
     color: #fbde72;
     font-size: 30px;
-    top: 40%;
+    top: 264px;
     left: 17%;
     font-weight: bold;
 }
@@ -403,7 +403,7 @@ body {
     position: absolute;
     color: #fbde72;
     font-size: 30px;
-    top: 60%;
+    top: 399px;
     right: 18%;
     font-weight: bold;
 }
