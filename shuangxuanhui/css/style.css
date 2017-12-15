@@ -134,10 +134,10 @@ body {
 .s2 h2,.s3 h2,.s4 h2,.s5 h2,.s6 h2,.ss3 h2,.s7 h2,.s8 h2{
     background:url("../img/6.png");
     background-size: contain;
-    width: 60%;
-    height: 11%;
+    width: 200px;
+    height: 66px;
     margin: auto;
-    line-height: 104px;
+    line-height:85px;
     margin-top:10%;
     color:gold;
     margin-bottom:7%;
