@@ -51,6 +51,38 @@ body {
     animation: buttonnext 1s infinite alternate;
 }
 
+#mp3Btn{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 100;
+    width: 30px;
+    height: 31px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border: 4px solid #292929;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    transform: rotateZ(0deg);
+    animation: mp3key 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+@keyframes mp3key{
+    from{
+        transform: rotateZ(0deg);
+
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+#mp3Btn img {
+    width: 10px;
+}
+
 /*第一屏样式开始*/
 .s1,.s2,.s3,.s4,.s5,.s6,.ss3,.s7,.s8{
     background:url("../img/bj.jpg");

@@ -162,19 +162,19 @@
                 <h2 class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s">校园风采</h2>
                 <div class="main">
                     <div class="sim1">
-                        <img src="img/29.png" alt="">
-                        <img src="img/21.jpg" alt="">
-                        <p>篮球争霸</p>
+                        <img class="ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s" src="img/29.png" alt="">
+                        <img class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="2s" src="img/21.jpg" alt="">
+                        <p class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="3s">篮球争霸</p>
                     </div>
                     <div class="sim2">
                         <img src="img/29.png" alt="">
-                        <img src="img/26.jpg" alt="">
-                        <p>认真学习</p>
+                        <img class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="3.5s" src="img/26.jpg" alt="">
+                        <p class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="4.5s">认真学习</p>
                     </div>
                     <div class="sim3">
-                        <img src="img/29.png" alt="">
-                        <img src="img/24.jpg" alt="">
-                        <p>大力挑战</p>
+                        <img class="ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1.5s" swiper-animate-delay="4.6s" src="img/29.png" alt="">
+                        <img class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="5.6s" src="img/24.jpg" alt="">
+                        <p class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="6.6s">大力挑战</p>
                     </div>
                 </div>
                 <div class="ani footer" swiper-animate-effect="fadeInUp" swiper-animate-duration="2s" swiper-animate-delay="1s">
@@ -213,14 +213,19 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-slide">Slide 9</div>
-        <div class="swiper-slide">Slide 10</div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
 
     <!--如果需要导航按钮-->
     <div class="swiper-button-next swiper-button-white"></div>
+    
+    <!--插入音乐-->
+    <audio src="mp3/ganghao.mp3" id="mp3" autoplay loop></audio>
+        <span id="mp3Btn" style="animation-play-state: running">
+            <img src="img/musicIcon.png" alt="">
+        </span>
+
 </div>
 
 <script src="https://cdn.bootcss.com/Swiper/4.0.5/js/swiper.min.js"></script>
