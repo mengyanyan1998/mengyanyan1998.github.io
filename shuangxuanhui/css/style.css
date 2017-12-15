@@ -357,39 +357,39 @@ body {
 }
 .s6 .img2{
     position: absolute;
-    width: 73%;
+    width: 64%;
     bottom: 9%;
-    margin-left: -40%;
+    margin-left: -32%;
     transform: rotate(14deg);
 }
 .s6 .imgs img{
     position: absolute;
-    width: 30%;
+    width: 24%;
     border:5px solid #fff;
 }
 .s6 .imgs img:nth-of-type(1){
-    top: 29%;
-    left: 24%;
+    top: 36%;
+    left: 30%;
     transform: rotate(16deg);
 }
 .s6 .imgs img:nth-of-type(2){
-    top: 39%;
-    left: 51%;
+    top: 38%;
+    left: 59%;
     transform: rotate(39deg);
 }
 .s6 .imgs img:nth-of-type(3){
-    top: 56%;
-    left: 39%;
+    top: 51%;
+    left: 48%;
     transform: rotate(16deg);
 }
 .s6 .imgs img:nth-of-type(4){
-    top: 47%;
-    left: 11%;
+    top: 54%;
+    left: 20%;
     transform: rotate(82deg);
 }
 .s6 .imgs img:nth-of-type(5){
-    top: 65%;
-    left: 11%;
+    top: 68%;
+    left: 29%;
     transform: rotate(-57deg);
 }
 
