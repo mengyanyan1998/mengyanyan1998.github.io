@@ -89,18 +89,18 @@ body {
     left: 28%;
 }
 .s1 h1 img:nth-of-type(2){
-    width: 25%;
+    width: 103.5px;
     top: 11%;
     left: 35%;
 }
 .s1 h1 img:nth-of-type(3){
-    width: 24%;
-    top: 31%;
+    width: 90px;
+    top: 33%;
     left: 18%;
 }
 .s1 h1 img:nth-of-type(4){
-    width: 28%;
-    top: 32%;
+    width: 105px;
+    top: 37%;
     left: 47%;
 }
 .s1 .main{
@@ -109,7 +109,7 @@ body {
     color:#f5b96d;
     left: 50%;
     margin-left: -25%;
-    font-size: 16px;
+    font-size: 12px;
 }
 .s1 .footer,.s3 .footer,.s4 .footer,.s5 .footer,.ss3 .footer,.s7 .footer,.s8 .footer{
     position: absolute;
@@ -217,6 +217,7 @@ body {
 .ss3 h3{
     font-family:华文行楷;
     font-size: 28px;
+    margin: 10px;
 }
 .ss3 p{
     font-size: 14px;
