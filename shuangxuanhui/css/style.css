@@ -62,50 +62,33 @@ body {
     position: absolute;
 }
 .s1 .sm1{
-    left: 11%;
-    top: 15%;
+    left: 2%;
+    top: 18%;
 }
-.s1 .sm2{
-    right: 15%;
-    top: 1%;
-    width: 33%;
-    transform: rotate(2deg);
-}
-.s1 .sm3{
-    right: 10%;
-    top: 8%;
-    width: 31%;
-    transform: rotate(0deg);
-}
-.s1 .sm4{
-    right: 0%;
-    top: -2%;
-    width: 28%;
-    transform: rotate(0deg);
-}
+
 .s1 h1 img:nth-of-type(1){
     width: 4%;
     top: 13%;
     left: 28%;
 }
 .s1 h1 img:nth-of-type(2){
-    width: 103.5px;
+    width: 94.5px;
     top: 11%;
     left: 35%;
 }
 .s1 h1 img:nth-of-type(3){
-    width: 90px;
+    width: 82px;
     top: 33%;
     left: 18%;
 }
 .s1 h1 img:nth-of-type(4){
-    width: 105px;
+    width: 99px;
     top: 37%;
     left: 47%;
 }
 .s1 .main{
     position: absolute;
-    bottom:23%;
+    bottom:18%;
     color:#f5b96d;
     left: 50%;
     margin-left: -25%;
