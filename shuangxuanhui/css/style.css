@@ -350,49 +350,62 @@ body {
 /*
 *第六屏样式开始
 */
-.s6 .img1{
+.s6 .main{
+    width: 80%;
+    margin:auto;
+}
+.sim1 img:nth-of-type(1),.sim2 img:nth-of-type(1),.sim3 img:nth-of-type(1){
+    position:relative;
+    width: 100%;
+    height: 124px;
+}
+.sim1 img:nth-of-type(2){
     position: absolute;
-    top:4%;
-    left:-15%;
-    width: 55%;
-    z-index: 100;
+    width: 115px;
+    top: 22%;
+    left: 13%;
+    border-radius: 50%;
 }
-.s6 .img2{
+.sim2 img:nth-of-type(1){
+    transform: rotate(180deg);
+}
+.sim2 img:nth-of-type(2){
     position: absolute;
-    width: 64%;
-    bottom: 9%;
-    margin-left: -32%;
-    transform: rotate(14deg);
+    width: 115px;
+    top: 42%;
+    right: 13%;
+    border-radius: 50%;
 }
-.s6 .imgs img{
+.sim3 img:nth-of-type(2){
     position: absolute;
-    width: 24%;
-    border:5px solid #fff;
+    width: 115px;
+    top:61%;
+    left:13%;
+    border-radius: 50%;
 }
-.s6 .imgs img:nth-of-type(1){
-    top: 36%;
-    left: 30%;
-    transform: rotate(16deg);
+.sim1 p{
+    position: absolute;
+    color: #fbde72;
+    font-size: 30px;
+    top: 21%;
+    right: 19%;
+    font-weight: bold;
 }
-.s6 .imgs img:nth-of-type(2){
-    top: 38%;
-    left: 59%;
-    transform: rotate(39deg);
+.sim2 p{
+    position: absolute;
+    color: #fbde72;
+    font-size: 30px;
+    top: 40%;
+    left: 17%;
+    font-weight: bold;
 }
-.s6 .imgs img:nth-of-type(3){
-    top: 51%;
-    left: 48%;
-    transform: rotate(16deg);
-}
-.s6 .imgs img:nth-of-type(4){
-    top: 54%;
-    left: 20%;
-    transform: rotate(82deg);
-}
-.s6 .imgs img:nth-of-type(5){
-    top: 64%;
-    left: 33%;
-    transform: rotate(-57deg);
+.sim3 p{
+    position: absolute;
+    color: #fbde72;
+    font-size: 30px;
+    top: 60%;
+    right: 18%;
+    font-weight: bold;
 }
 .s6 .footer img{
     position: absolute;
