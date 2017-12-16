@@ -48,8 +48,19 @@ body {
     width: 20px;
     height: 33px;
     background-size: contain;
-    animation: buttonnext 1s infinite alternate;
+    animation: buttonnext 2s infinite;
 }
+@keyframes buttonnext {
+    0%{
+        bottom:5%;
+        opacity: 1;
+    }
+    100%{
+        bottom:8%;
+        opacity: 0;
+    }
+}
+
 
 #mp3Btn{
     position: absolute;
