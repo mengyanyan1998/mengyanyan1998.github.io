@@ -47,12 +47,12 @@ body {
 }
 @keyframes buttonnext {
     0%{
-      bottom: 0%;
-      opacity: 1;
+      bottom: 5%;
+      opacity: 0;
     }
     100%{
-        bottom: 5%;
-        opacity: 0;
+        bottom: 8%;
+        opacity: 1;
     }
 }
 
@@ -152,14 +152,14 @@ body {
 
 }
 .footer{
-    margin-top: 124px;
+    margin-top: 68px;
     margin-bottom: 0;
 }
 .footer p{
     color:#08cbad;
     font-family:迷你简菱心;
     margin-bottom: 13px;
-    font-size: 18px;
+    font-size: 14px;
 }
 .footer img{
     height: 70px;
@@ -251,16 +251,16 @@ body {
 .s2 span{
     background: -webkit-linear-gradient(left, #00ecfc, #00fd9d);
     border-radius: 10px;
-    font-size: 14px;
-    font-weight:bold;
+    font-size: 12px;
+    font-weight: bold;
     display: inline-block;
     width: 120px;
     height: 25px;
     left: 50%;
-    margin-left:-60px;
+    margin-left: -60px;
     position: absolute;
-    bottom:-10px;
-    line-height:25px;
+    bottom: -3%;
+    line-height: 25px;
 }
 
 /*
