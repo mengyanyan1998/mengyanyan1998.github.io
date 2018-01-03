@@ -1,0 +1,300 @@
+*{margin:0;padding:0;
+font-family: Calibri;}
+a{text-decoration: none;}
+li{list-style: none;}
+.clear{clear:both;}
+/* -----------top-bg--------- */
+
+#top-bg{
+	width: 100%;
+	overflow: hidden;
+	background:#000;
+}
+#top{
+	width: 1200px;
+	margin:0 auto;
+}
+.logo{
+	padding:20px 0 0 134px;
+	float: left;
+}
+.top-right{
+	 margin:16px 0 0 550px; 
+	float: left;
+}
+.top-right li{
+	float: left;
+	color:#9e9e9e;
+	margin-right: 19px;
+	font-size: 12px;
+}
+.top-right img{
+	margin-right: 6px;
+}
+.top-right .suo{
+	margin-left: 15px;
+	color:#fff;
+}
+.nav{
+	float: left;
+	margin:38px 0 0 134px;
+}
+.nav li{
+	float: left;
+	margin-right: 38px;
+}
+.nav li a:hover{
+	color:red;
+}
+.nav a{
+	color:#fff;
+	font-size: 14px;
+}
+.nav .no1{
+	color:red;
+}
+.nav li img{
+	margin-left:6px;
+}
+form{
+	float: right;
+	margin: 30px 134px 0 0;
+}
+input{
+	width: 196px;
+	height: 36px;
+	border:2px solid #424242;
+	background:url(../images/bg_03.jpg);
+	margin-bottom: 24px;
+}
+/* ----------header-bg --------*/
+
+#header-bg{
+	width: 100%;
+	overflow: hidden;
+}
+#header{
+	width: 1200px;
+	margin:0 auto;
+	margin-top: 30px;
+}
+/* ---------main-bg---------- */
+
+#main-bg{
+	width: 100%;
+	overflow: hidden;
+}
+#mainbar{
+	width: 1200px;
+	margin:0 auto;
+	margin-top: 43px;
+}
+#mainbar h1{
+	margin-left: 136px;
+	font-size: 22px;
+	color:#000;
+	float: left;
+}
+#mainbar .no1{
+	float: right;
+	margin-right:136px;
+}
+#mainbar li{
+	float: left;
+	margin-left: 12px;
+}
+#mainbar .no2{
+	padding-top: 44px;
+	margin-left: 125px;
+}
+#mainbar .no2 li{
+	width: 232px;
+	height: 273px;
+	background:#eff0f1;
+}
+#mainbar p{
+	margin: 19px 0 0 14px;
+	line-height: 20px;
+	font-size: 14px;
+	color:#595959;
+	float: left;
+}
+#mainbar .no3{
+	float: right;
+	margin:15px 15px 0 0;
+}
+#main{
+	width: 1200px;
+	margin:0 auto;
+	background:#f0f1f3;
+	margin-top: 56px;
+	overflow: hidden;
+}
+#main ul{
+	float: left;
+	width: 282px;
+	margin:0 40px 60px 0;
+}
+#main .no1{
+	margin-left: 125px;
+}
+#main h1{
+	font-size: 18px;
+	color:#000;
+	margin: 40px 0 25px 0;
+}
+#main ul img{
+	margin-bottom: 8px;
+	float: left;
+	width: 112px;
+	height: 84px;
+	margin-right: 17px;
+}
+#main span{
+	background:#d0d1d3;
+	color:#fff;
+	font-size: 10px;
+	padding:6px 5px 5px 5px;
+}
+#main li{
+	height: 85px;
+	margin-top: 8px;
+}
+#main p{
+	font-size: 14px;
+	color:#595959;
+	margin-top: 8px;
+	line-height: 18px;
+}
+#main .new{
+	margin-top: 600px;
+	padding-bottom: 20px;
+}
+.new h2{
+	color:#808080;
+	font-size: 14px;
+	float: left;
+	margin-left: 134px;
+}
+.new img{
+	float: left;
+}
+#main-bottom{
+	width: 1200px;
+	margin:0 auto;
+	margin-top: 40px;
+}
+.bottom-text{
+	margin-left: 134px;
+}
+.bottom-text .no1{
+	float: left;
+	margin-right: 542px;
+}
+.bottom-text p{
+	font-size: 16px;
+	color:#000;
+}
+.bottom-text ul{
+	margin-top: 20px;
+}
+.bottom-text li{
+	float: left;
+	margin-right: 8px;
+}
+/* ----------footer-bg------- */
+
+#footer-bg{
+	width: 100%;
+	background:url(../images/footer_03.jpg);
+	overflow: hidden;
+	margin-top: 40px;
+	overflow: hidden;
+	height: 450px;
+}
+#footer{
+	width: 1200px;
+	margin:0 auto;
+}
+ .article{
+	padding-top: 35px;
+} 
+.article ul{
+	float: left;
+}
+.article .no1{
+	margin:0 220px 0 134px;
+}
+.article .no2{
+	margin-right: 30px;
+}
+.article li{
+	color:#fff;
+	font-size: 14px;
+	line-height: 26px;
+}
+.article .dv1{
+	padding-top: 20px;
+}
+.article span{
+	font-size: 16px;
+	color:#87888a;
+}
+.article .no3{
+	margin-right: 85px;
+}
+.article .no4{
+	margin-right: 74px;
+}
+.article .dv{
+	color:#424243;
+	margin-top: 14px;
+}
+.article a{
+	padding:15px 20px 14px 20px;
+	background:#424243;
+	color:#fff;
+}
+.article img{
+	margin-left: 5px;
+}
+.article .no6{
+	margin-top: 20px;
+}
+.article .no5{
+	margin-top: 30px;
+}
+.copy{
+	float: left;
+	margin: 85px 0 0 134px;
+}
+.copy img{
+	float: left;
+}
+.copy p{
+	float: left;
+	margin-left: 25px;
+	color:#494a4d;
+	font-size: 10px;
+}
+.copy .no{
+	margin-top: 18px;
+}
+.copy a{
+	color:#494a4d;
+	border-bottom: 1px solid #494a4d;
+}
+.copy h4{
+	float: left;
+	color:#808183;
+	font-size: 12px;
+	margin: 18px 26px 0 0;
+}
+.icon{
+	float: left;
+	margin: 70px 0 0 60px;
+}
+.icon li{
+	float: left;
+	margin-right: 3px;
+}

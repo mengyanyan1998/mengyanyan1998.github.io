@@ -1,0 +1,287 @@
+*{margin:0;padding:0;font-family: 宋体;}
+li{list-style: none;}
+a{text-decoration: none;}
+.clear{clear:both;}
+
+
+#warper{
+	width: 100%;
+	background:#fff;
+}
+
+/* ------------#header ---------------*/
+
+#header-bg{
+	width: 100%;
+	background:#ebebeb;
+	overflow: hidden;
+}
+#header{
+	width: 990px;
+	margin:0 auto;
+}
+.logo{
+	margin-left: 16px;
+	float: left;
+}
+.label{
+	float: left;
+}
+input{
+	width: 212px;
+	height: 16px;
+	margin-left: 42px;
+	margin-top: 22px;
+}
+#skin{
+	margin:14px 24px 0 0;
+	float: right;
+}
+.nav{
+	width: 990px;
+	background:#4a4a4a;
+	overflow: hidden;
+	margin:0 auto;
+}
+.nav li{
+	margin-left: 4px;
+	float: left;
+	padding:12px 0 11px 28px;
+}
+.nav li a{
+	color:#fff;	
+	font-size: 16px;
+}
+.nav li a:hover{
+	text-decoration: none;
+}
+
+/* --------------------main----------------- */
+
+#main{
+	width: 990px;
+	overflow: hidden;
+	margin:0 auto;
+}
+.main-left{
+	width: 188px;
+	height: 558px;
+	border:1px solid #6e6e6e;
+	margin-top: 10px;
+	float: left;
+}
+.main-left h1{
+	width: 190px;
+	height: 30px;
+	background:#6e6e6e;
+	font-size: 14px;
+	color:#fff;
+}
+.main-left h1 span{
+	margin-left: 14px;
+	line-height: 30px;
+}
+.main-left h2{
+	font-size: 14px;
+	color:#000;
+	padding:12px 0 5px 0;
+	border-bottom: 1px solid #eee;
+}
+.main-left .no1{
+	margin: 0 10px 0 12px;
+}
+.main-left .dv1{
+	float: left;
+	margin-right: 34px;
+}
+.main-left .dv1,.dv2{
+	margin-top: 5px;
+	line-height: 20px;
+}
+.main-left a{
+	color:#444;
+	font-size: 12px;
+}
+.main-left a:hover{
+	color:#f9044e;
+	text-decoration: none;
+}
+.dv1 li span a,.dv2 li span a{
+	color:#f9044e;
+}
+.main-center{
+	float: left;
+}
+.center-left{
+	width: 550px;
+	height: 321px;
+	margin:10px 10px 0 10px;
+}
+.center-left .pic{
+	position: absolute;
+	width: 550px;
+	height: 321px;
+}
+.center-left .pic img{
+	position: absolute;
+	width: 550px;
+	height: 321px;
+}
+
+.center-left .text{
+	position: relative;
+}
+.center-left .text-1{
+	background:skyblue;
+}
+.center-left .text a{
+	width: 109px;
+	height: 42px;
+	opacity: 0.8;
+	background:#000;
+	float: left;
+	margin-top: 279px;
+	margin-left: 1px;
+}
+.bar{
+	width: 4px;
+	height: 4px;
+	color:#fff;
+	text-align: center;
+	margin-left: 50px;
+	display: none;
+}
+.center-left .dv1{
+	background:skyblue;
+}
+.center-left .text li:first-child{
+	margin-left: 0;
+}
+.center-left .text p{
+	color:#fff;
+	text-align: center;
+	font-size: 10px;
+	margin-top: 8px;
+}
+.center-left a:hover{
+	text-decoration: none;
+}
+.center-right img{
+	float: left;
+	margin-top: 10px;
+}
+.right-bottom{
+	width: 228px;
+	height: 133px;
+	border:1px solid #dfdfdf;
+	float: left;
+	margin-top: 10px;
+}
+.right-bottom h3{
+	font-size: 12px;
+	color:#000;
+	padding:6px 167px 5px 12px;
+	border-bottom: 1px solid #dfdfdf;
+}
+.right-bottom ul{
+	margin:5px 0 0 12px;
+}
+.right-bottom li{
+	font-size: 10px;
+	color:#666;
+	line-height: 20px;
+}
+.mainbar{
+	float: left;
+	margin: 20px 0 0 12px;
+	width: 787px;
+}
+.mainbar h4{
+	font-size: 12px;
+	color:#000;
+	float: left;
+}
+.mainbar li{
+	float: left;
+}
+.mainbar .title li:hover{
+	background:url(../images/2017-03-29_112755_03.png);
+}
+.mainbar .title{
+	float:right;
+}
+.mainbar .title li{
+	width: 44px;
+	height: 20px;
+	background:#e4e4e4;
+	margin-right: 11px;
+	color:#000;
+	text-align: center;
+	line-height: 20px;
+	float: left;
+	font-size: 12px;
+}
+.mainbar .title li a:hover{
+	text-decoration: none;
+	color:#fff;
+}
+.mainbar .img{
+	width: 5000px;
+}
+/* .mainbar .img ul{
+	width: 780px;
+} */
+.mainbar .pic{
+	width: 780px;
+	padding-top: 8px;
+	border-top: 1px solid #e4e4e4;
+	overflow: hidden;
+}
+.mainbar .pic img{
+	margin-left: 11px;
+}
+.mainbar .img p {
+	width: 183px;
+	height: 24px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 24px;
+	margin-left: 11px;
+	background:#efefef;
+}
+
+/* ------------------footer-------------------- */
+
+#footer{
+	width: 990px;
+	margin:0 auto;
+}
+.copy{
+	text-align: center;
+	margin-top: 35px;
+	padding-bottom: 20px;
+	font-size: 14px;
+	color:#6a6666;
+}
+.copy p{
+	font-family: Arial;
+}
+/* .center-left{
+	float: left;
+	background:red;
+	width: 556px;
+	height: 233px;
+}
+.center-right{
+	float: left;
+	width: 230px;
+	height: 320px;
+	background:yellow;
+}
+.mainbar{
+	width: 780px;
+	height: 230px;
+	background:#000;
+	float: right;
+}
+ */

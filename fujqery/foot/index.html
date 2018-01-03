@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/index16.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/skin_0.css" id="cssFile">
+
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script>
+		$(function(){
+		$("#skin li").click(function(){
+			var n=$(this).index()
+			$(this).addClass("selected").siblings().removeClass("selected")
+			$("#cssFile").attr("href","css/skin_"+n+".css")
+		})
+
+		var c=0
+		function run(){
+			c++
+			c = ( c==5 ) ? 0 : c
+			$(".center-left .pic img").eq(c).fadeIn(500).siblings("img").fadeOut(500)
+			$(".center-left .text a").eq(c).css({"background":"skyblue"}).siblings("a").css({"background":"#000"})
+		}
+		var timer=setInterval(run,2500)
+		$(".center-left .text a").mouseenter(function(){
+			clearInterval(timer)
+			c=$(this).index()
+			$(".center-left .pic img").eq(c).fadeIn(500).siblings("img").fadeOut(500)
+			$(".center-left .text a").eq(c).css({'background':'skyblue'}).siblings('a').css({'background':'#000'})
+		})
+		$(".center-left .text a").mouseleave(function(){
+			timer=setInterval(run,2500)
+		})
+		var n=0
+		$(".mainbar .title li").click(function(){
+			n++
+			if(n==4){
+				n=0
+			}
+			$(".mainbar .img").stop().animate({"marginLeft":-776*n},500)
+		})
+
+	})
+	</script>
+
+</head>
+<body>
+	<div id="header-bg">
+		<div id="header">
+			<div class="logo">
+				<img src="images/logo.gif">
+			</div>
+			<div class="label">
+				<input type="text" placeholder="请输入商品名称">
+			</div>
+			<ul id="skin">
+				<li id="skin_0" titie="灰色" class="selected">灰色</li>
+				<li id="skin_1" titie="紫色">紫色</li>
+				<li id="skin_2" titie="红色">红色</li>
+				<li id="skin_3" titie="天蓝色">天蓝色</li>
+				<li id="skin_4" titie="橙色">橙色</li>
+				<li id="skin_5" titie="淡绿色">淡绿色</li>
+			</ul>
+		</div>
+	</div>
+			<div class="clear"></div>
+			<div class="nav">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">品牌</a></li>
+					<li><a href="#">女装</a></li>
+					<li><a href="#">男装</a></li>
+					<li><a href="#">鞋包配饰</a></li>
+				</ul>
+			</div>
+		<div id="main">
+			<div class="main-left">
+				<h1><span>商品分类</span></h1>
+				<div class="no1">
+				<h2>推荐品牌</h2>
+				<ul class="dv1">
+					<li><a href="#">耐克</a></li>
+					<li><a href="#">达芙妮</a></li>
+					<li><a href="#">安踏</a></li>
+					<li><span><a href="#">骆驼</a></span><img src="images/hot.gif"></li>
+				</ul>
+				<ul class="dv2">
+					<li><span><a href="#">阿迪达斯</a></span><img src="images/hot.gif"></li>
+					<li><a href="#">李宁</a></li>
+					<li><a href="#">奥康</a></li>
+					<li><a href="#">特步</a></li>
+				</ul>
+				</div>
+				<div class="no1">
+				<h2>女装</h2>
+				<ul class="dv1">
+					<li><a href="#">呢大衣</a></li>
+					<li><a href="#">羽绒</a></li>
+					<li><a href="#">羊绒衫</a></li>
+					<li><a href="#">连衣裙</a></li>
+				</ul>
+				<ul class="dv2">
+					<li><a href="#">T恤</a></li>
+					<li><a href="#">衬衫</a></li>
+					<li><a href="#">针织</a></li>
+					<li><a href="#">皮外套</a></li>
+				</ul>
+				</div>
+				<div class="no1">
+				<h2>男装</h2>
+				<ul class="dv1">
+					<li><a href="#">衬衫</a></li>
+					<li><a href="#">夹克</a></li>
+					<li><a href="#">风衣</a></li>
+					<li><a href="#">西服</a></li>
+				</ul>
+				<ul class="dv2">
+					<li><a href="#">T恤衫</a></li>
+					<li><a href="#">大皮衣</a></li>
+					<li><a href="#">牛仔裤</a></li>
+					<li><a href="#">卫衣</a></li>
+				</ul>
+				</div>
+				<div class="no1">
+				<h2>鞋包配饰</h2>
+				<ul class="dv1">
+					<li><a href="#">围巾</a></li>
+					<li><a href="#">真皮包</a></li>
+					<li><a href="#">达芙妮</a></li>
+					<li><a href="#">毛绒</a></li>
+				</ul>
+				<ul class="dv2">
+					<li><a href="#">旅行箱</a></li>
+					<li><a href="#">韩版</a></li>
+					<li><a href="#">单肩包</a></li>
+					<li><a href="#">清仓靴子</a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="main-center">
+					<div class="center-left">
+						<div class="pic">
+							<img class="pic1" src="images/5.jpg">
+							<img src="images/1.jpg">
+							<img src="images/2.jpg">
+							<img src="images/3.jpg">
+							<img src="images/4.jpg">
+						</div>
+						<ul class="text">
+							<a class="text-1" href="#"><li><p>相约情人节<br>全场119元起</p>
+							</li></a>
+							<a href="#"><li><p>新款上线<br>全场357元起</p>
+							</li></a>
+							<a href="#"><li><p>愤怒小鸟特卖<br>全场89</p>
+							</li></a>
+							<a href="#"><li><p>男鞋促销第一<br>全场3.5折起</p>
+							</li></a>
+							<a href="#"><li><p>春季新品发布<br>全场4.1折起</p>
+							</li></a>
+						</ul>
+					</div>
+					</div>
+					<div class="center-right">
+						<img src="images/20120216.jpg">
+						<div class="right-bottom">
+							<h3>最新动态</h3>
+							<ul>
+								<li>[活动]伊伴春鞋迎春大促</li>
+								<li>[活动]千百度冬靴新品火热让利</li>
+								<li>[活动]COEY秋冬新品全场2.3折起</li>
+								<li>[活动]伊伴春鞋迎春大促</li>
+								<li>[活动]千百度冬靴新品火热让利</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mainbar">
+						<h4>品牌活动</h4>
+						<ul class="title">
+							<li><a href="#">运动</a></li>
+							<li><a href="#">女鞋</a></li>
+							<li><a href="#">男鞋</a></li>
+							<li><a href="#">童鞋</a></li>
+						</ul>
+						<div class="clear"></div>
+						<div class="pic">
+							<div class="img">
+								<ul>
+									<li><img src="images/20120217.jpg"><p>耐克</p></li>
+									<li><img src="images/20120218.jpg"><p>阿迪达斯</p></li>
+									<li><img src="images/20120219.png"><p>李宁</p></li>
+									<li><img src="images/20120220.png"><p>安踏</p></li>
+								</ul>
+								<ul>
+									<li><img src="images/20120217.jpg"><p>耐克</p></li>
+									<li><img src="images/20120218.jpg"><p>阿迪达斯</p></li>
+									<li><img src="images/20120219.png"><p>李宁</p></li>
+									<li><img src="images/20120220.png"><p>安踏</p></li>
+								</ul>
+								<ul>
+									<li><img src="images/20120217.jpg"><p>耐克</p></li>
+									<li><img src="images/20120218.jpg"><p>阿迪达斯</p></li>
+									<li><img src="images/20120219.png"><p>李宁</p></li>
+									<li><img src="images/20120220.png"><p>安踏</p></li>
+								</ul>
+								<ul>
+									<li><img src="images/20120217.jpg"><p>耐克</p></li>
+									<li><img src="images/20120218.jpg"><p>阿迪达斯</p></li>
+									<li><img src="images/20120219.png"><p>李宁</p></li>
+									<li><img src="images/20120220.png"><p>安踏</p></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div id="footer">
+				<div class="copy">
+					<p>Copyright&copy 2009-2010 JaneShop Inc.</p>
+				</div>
+			</div>
+		
+</body>
+</html>

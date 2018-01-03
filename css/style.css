@@ -11,13 +11,14 @@ h1{
     font-weight: 700;
     padding-top: 50px;
     padding-bottom: 30px;
-    font-family: 华文行楷;                                               ;
+    font-family: 华文行楷;
+    text-align: center;
 }
-.log{
+.home .log{
     text-align: center;
     padding-bottom: 50px;
 }
-.log a{
+.home .log a{
     font-size: 25px;
     color:#fff;
 }
@@ -44,7 +45,7 @@ h3{
     cursor: progress;
 }
 .thumbnail .caption p{
-    color:#676060;
+    color:#000;
     font-size: 14px;
     padding-bottom: 10px;
 }
@@ -53,7 +54,7 @@ h3{
     background:#62adf1;
 }
 .thumbnail{
-    opacity: 0.8;
+    background:rgba(245, 245, 245, 0.59);
     height: 458px;
 }
 .thumbnail:hover{
@@ -62,4 +63,12 @@ h3{
 .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9{
     margin-bottom: 40px;
     padding-left: 0;
+}
+
+/*html静态页面*/
+.html h1,.jquery h1{
+    margin-bottom: 40px;
+}
+.html .thumbnail,.jquery .thumbnail{
+    height: 370px;
 }
