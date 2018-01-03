@@ -66,9 +66,9 @@ h3{
 }
 
 /*html静态页面*/
-.html h1,.jquery h1,.java h1,.html5 h1{
+.html h1,.jquery h1,.java h1,.htmlcss h1{
     margin-bottom: 40px;
 }
-.html .thumbnail,.jquery .thumbnail,.java .thumbnail,.html5 .thumbnail{
+.html .thumbnail,.jquery .thumbnail,.java .thumbnail,.htmlcss .thumbnail{
     height: 370px;
 }
