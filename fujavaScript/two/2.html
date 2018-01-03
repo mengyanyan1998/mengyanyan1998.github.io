@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二级菜单联动</title>
+	<style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		a{
+			text-decoration:none;
+		}
+		#menu{
+			width:210px;
+			height:468px;
+			background:#C81623;
+			position:relative;
+			left:70px;
+			top:120px;
+		}
+		#menu ul li{
+			list-style:none;
+			width:100%;
+			height:30px;
+			/*background:blue;*/
+			line-height:30px;
+		}
+		#menu>ul>li{
+		/*color:white;*/
+			font-size:14px;
+			/*font-size:16px;*/
+			/*font-family:微软雅黑 ;*/
+			font-family:microsoft yahei;
+		}
+		#menu>ul>li>a{
+			color:white;
+			margin-left:10px;
+		}
+		#menu>ul>li>span{
+			float:right;
+			margin-right:10px;
+			color:#F7F7F7;
+		}
+		/*
+		#menu>ul>li:hover{
+			background:#F7F7F7;
+			
+		}
+		*/
+		#menu>ul>li:hover>a{
+			color:#C81623;
+		}
+		#menu>ul>li>ul{
+			width:300px;
+			height:468px;
+			background:#CCC;
+			/*display:none;*/
+			position:absolute;
+			top:0px;
+			left:210px;
+			display:none;
+		}
+		/*
+		#menu>ul>li:hover>ul{
+			display:block;
+		}
+		*/
+		#menu>ul>li>ul>li{
+			height:30px;
+			width:100%;
+		}
+		#menu>ul>li>ul>li>a{
+			color:black;
+			margin-left:10px;
+		}
+		/*
+		#menu>ul>li>ul>li:hover{
+			background:#F7F7F7;
+		}
+		*/
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li>
+				<a href="#">家用电器</a><span>></span>
+				<ul class="subul">
+					<li><a href="">大家电</a></li>
+					<li><a href="">小家电</a></li>
+					<li><a href="">生活电器</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">手机、数码</a><span>></span>
+				<ul class="subul">
+				<li><a href="">手机通讯</a></li>
+				<li><a href="">京东通讯</a></li>
+				<li><a href="">运营商</a></li>
+			</ul>
+			</li>
+			<li><a href="#">电脑、办公</a><span>></span></li>
+			<li><a href="#">家具、家居</a><span>></span></li>
+			<li><a href="#">男装、女装</a><span>></span></li>
+			<li><a href="#">宠物、保洁</a><span>></span></li>
+			<li><a href="#">运动、户外</a><span>></span></li>
+			<li><a href="#">图书、电子书</a><span>></span></li>
+			<li><a href="#">图书、电子书</a><span>></span></li>
+			<li><a href="#">图书、电子书</a><span>></span></li>
+			<li><a href="#">图书、电子书</a><span>></span></li>
+			<li><a href="#">图书、电子书</a><span>></span></li>
+			<li><a href="#">图书、电子书</a><span>></span></li>
+			<li><a href="#">图书、电子书</a><span>></span></li>
+			<li><a href="#">图书、电子书</a><span>></span></li>
+		</ul>
+
+	</div>
+
+	<script>
+		//操作数组内的任何一个元素必须遍历
+		//数组没有孩子，只有元素
+		//数组里边的当前元素用元素名+[i]
+		/*var li=document.getElementById("menu").children[0].children;
+		for(var i=0;i<li.length;i++){
+			li[i].onmouseover=function(){
+				this.style.background="#fff";
+				this.children[2].style.display="block";
+			}
+			li[i].onmouseout=function(){
+				this.style.background="#c81623";
+				this.children[2].style.display="none";
+			}
+		}
+
+		var lis=document.getElementsByClassName("subul")
+		for(var j=0;j<lis.length;j++){
+			subli=lis[j].children;
+			for(var a=0;a<subli.length;a++){
+				subli[a].onmouseover=function(){
+					this.style.background="#fff";
+				}
+				subli[a].onmouseout=function(){
+					this.style.background="#ccc"
+				}
+			}
+		}
+*/
+
+
+		var li=document.getElementById("menu").children[0].children;
+		for(var i=0;i<li.length;i++){
+			li[i].onmouseover=function(){
+				this.style.background="#fff";
+				this.children[2].style.display="block";
+				for(var j=0;j<lis.length;j++){
+					lis[j].onmouseover=function(){
+						this.style.background="#fff";
+					}
+				}
+			}
+			li[i].onmouseout=function(){
+				this.style.background="#c81623";
+				this.children[2].style.display="none";
+			}
+		}
+		var ul=document.getElementsByClassName("subul");
+		for(var j=0;j<ul.length;j++){
+			subli=ul[j].children
+			for(a=0;a<subli.length;a++){
+				subli[a].onmouseover=function(){
+					this.style.background="#fff";
+				}
+				subli[a].onmouseout=function(){
+					this.style.background="#ccc"
+				}
+			}
+		}
+	</script>
+</body>
+</html>

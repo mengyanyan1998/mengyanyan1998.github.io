@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Switch</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #image {
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+
+        #image ul::after {
+            display: table;
+            clear: both;
+            content: "";
+        }
+
+        #image ul {
+            width: 800px;
+            position: relative;
+            left: 0;
+            transition: .5s;
+        }
+
+        #image li {
+            float: left;
+        }
+
+        #image img {
+            width: 200px;
+            height: 320px;
+            display: block;
+        }
+
+        #text {
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            top: -114px;
+        }
+
+        #text a {
+            padding: 10px 20px;
+            background-color: #eee;
+            font-weight: bold;
+            color: #fff;
+            display: block;
+            width: 80%;
+            transition: .5s;
+        }
+
+        #text a:hover {
+            width: 100%;
+        }
+
+        #text a#btn0 {
+            background-color: #994c73;
+            width: 100%;
+        }
+
+        #text a#btn1 {
+            background-color: #f66;
+        }
+
+        #text a#btn2 {
+            background-color: #2e8799;
+        }
+
+        #text span {
+            float: right;
+            display: none;
+        }
+
+        #text span#span1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+<div id="image">
+    <ul id="imageul">
+        <li><img src="img/1.jpg" alt=""></li>
+        <li><img src="img/2.jpg" alt=""></li>
+        <li><img src="img/3.jpg" alt=""></li>
+        <!--<li><img src="1.jpg" alt=""></li>-->
+    </ul>
+</div>
+<div id="text">
+<ul id="textul">
+   <li><a href="#" id="btn0" onmouseover="btn0()">你的名字1 <span id="span1">&gt;</span></a></li>
+   <li><a href="#" id="btn1" onmouseover="btn1(this)">图片2 <span id="span2">&gt;</span></a></li>
+   <li><a href="#" id="btn2" onmouseover="btn2(this)">你的名字3 <span id="span3">&gt;</span></a></li>
+</ul>
+</div>
+<script>
+    var a=document.getElementById("btn0");
+    var b=document.getElementById("btn1");
+    var c=document.getElementById("btn2");
+    var span1=document.getElementById("span1");
+    var span2=document.getElementById("span2");
+    var span3=document.getElementById("span3");
+    var pic=document.getElementById("imageul");
+    function btn0(){
+        a.style.width="100%";
+        b.style.width="80%";
+        c.style.width="80%";
+        span1.style.display="none";
+        span2.style.display="block";
+        span3.style.display="block";
+        pic.style.left="0";
+    }
+    function btn1(){
+        a.style.width="80%";
+        b.style.width="100%";
+        c.style.width="80%";
+        span1.style.display="block";
+        span2.style.display="none";
+        span3.style.display="block";
+        pic.style.left="-200px";
+    }
+    function btn2(){
+        a.style.width="80%";
+        b.style.width="80%";
+        c.style.width="100%";
+        span1.style.display="block";
+        span2.style.display="block";
+        span3.style.display="none";
+        pic.style.left="-400px";
+    }
+</script>
+</body>
+
+</html>

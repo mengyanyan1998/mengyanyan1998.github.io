@@ -1,0 +1,106 @@
+*{margin:0;padding:0}
+li{list-style: none}
+a{text-decoration: none}
+
+#warper{
+    width: 100%;
+    background:#fff;
+    overflow: hidden;
+}
+#header{
+    width: 1225px;
+    margin:0 auto;
+}
+#top .pic1{
+    position: absolute;
+    margin-left: 1200px;
+}
+#nav{
+    width: 1225px;
+    background:#e03a3c;
+    height: 40px;
+    margin-top: 32px;
+}
+#nav li{
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    width: 122.5px;
+}
+#nav a{
+    font-size: 12px;
+    color:#000;
+    font-family:Arial;
+}
+/*#nav li:hover{
+    background:#fff;
+}*/
+#banner{
+    width: 1225px;
+    height: 446px;
+    position: relative;
+    margin-top: 42px;
+}
+#banner>ul>li{
+    display: none;
+}
+#banner ul .active{
+    display: block;
+}
+#banner .active_num{
+    background:red;
+}
+#banner #num_list{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom:0px;
+}
+#banner #num_list ul{
+    margin-left: 500px;
+}
+#banner #num_list li{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+#banner #num_list li span{
+    width: 20px;
+    height: 20px;
+    color:#fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    display: block;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+#banner #num_list li .active-num{
+    background:#c81623;
+}
+#main{
+    width: 1225px;
+    margin:0 auto;
+    background:#fef4e8;
+    margin-top: 47px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+table{
+    text-align: center;
+    width: 1225px;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+}
+tfoot{
+    font-size: 18px;
+}
+.dv1{
+    color:#b8454a;
+}
+button{
+    width: 20px;
+    height: 20px;
+}
+

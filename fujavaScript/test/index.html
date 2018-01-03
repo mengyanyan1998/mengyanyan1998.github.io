@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="warper">
+    <div id="header">
+        <div id="top">
+            <a href="#"><img class="pic1" onclick="add()" src="img/test_03.png" alt=""></a>
+            <img class="pic2" src="img/top.png" alt="">
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="">电脑办公</a></li>
+                <li><a href="">手机通讯</a></li>
+                <li><a href="">生活电器</a></li>
+                <li><a href="">大家电</a></li>
+                <li><a href="">智能数码</a></li>
+                <li><a href="">饮料酒水</a></li>
+                <li><a href="">家居家装</a></li>
+                <li><a href="">母婴童装</a></li>
+                <li><a href="">食品生鲜</a></li>
+                <li><a href="">各户家清</a></li>
+            </ul>
+        </div>
+        <div id="banner">
+            <ul>
+                <li class="active" id="a">
+                    <img src="img/banner1.jpg" alt=""/>
+                </li>
+                <li>
+                    <img src="img/banner2.jpg" alt=""/>
+                </li>
+            </ul>
+            <div id="num_list">
+                <ul>
+                    <li>
+                        <span class="active_num">1</span>
+                    </li>
+                    <li>
+                        <span num="1">2</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <table>
+        <thead>
+        <tr>
+            <th class="dv1">商品</th>
+            <th class="dv2">描述</th>
+            <th class="dv3">单价</th>
+            <th class="dv4">数量</th>
+            <th class="dv5">小计</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src="img/product01.png" alt=""></td>
+            <td>华为HUAWEInova青春版4GB+64GB莺语粉 移动联通电信4G手</td>
+            <td>&yen;1789</td>
+            <td>
+                <button onclick="calc(this)">+</button>
+                <span>1</span>
+                <button onclick="calc(this)">-</button></td>
+            <td>&yen;1789</td>
+        </tr>
+        <tr>
+            <td><img src="img/product02.png" alt=""></td>
+            <td>vivoY55全网通青春版4GB+64GB莺语粉 双卡双待 玫瑰金</td>
+            <td>&yen;1999</td>
+            <td>
+                <button onclick="calc(this)">+</button>
+                <span>1</span>
+                <button onclick="calc(this)">-</button></td>
+            <td>&yen;1999</td>
+        </tr>
+        <tr>
+            <td><img src="img/product03.png" alt=""></td>
+            <td>vivoY67全网通青春版4GB+64GB莺语粉 双卡双待 玫瑰金</td>
+            <td>&yen;2199</td>
+            <td>
+                <button onclick="calc(this)">+</button>
+                <span>1</span>
+                <button onclick="calc(this)">-</button></td>
+            <td>&yen;2199</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="4">合计</td>
+            <td class="dv1">&yen;5987</td>
+        </tr>
+        </tfoot>
+        </table>
+    </div>
+</div>
+
+
+<script>
+    //图片消失
+    var a=document.getElementById("top");
+    function add(){
+        a.style.display="none";
+    }
+
+    //鼠标经过
+    var b=document.getElementById("nav").firstElementChild.children
+    for(var q=0;q<b.length;b++){
+        b[q].onmouseover=function(){
+            b.style.background="#fff";
+        }
+        b[q].onmouseout=function(){
+            b.style.background="red";
+        }
+    }
+
+    //轮播
+    var lis=document.getElementById("banner").firstElementChild.children;
+    var num_list=document.getElementById("num_list").firstElementChild.children;
+    var lun=document.getElementById("banner");
+
+    var i=0;
+    var timer;
+    function run(){
+        timer=setInterval(function(){
+            lis[i].removeAttribute("class");
+            num_list[i].firstElementChild.removeAttribute("class");
+            i++;
+            if(i>=lis.length){
+                i=0;
+            }
+            lis[i].setAttribute("class","active");
+            num_list[i].firstElementChild.setAttribute("class","active-num");
+        },2000);
+
+    }
+    run();
+
+    //购物车
+    function calc(btn) {
+        var span = btn.parentElement.querySelector("span");
+        var n = parseInt(span.innerHTML);
+        if(btn.innerHTML=="+"){
+            n++
+        }else if(n>1){
+            n--
+        }else{
+            n==0
+        }
+        span.innerHTML=n;
+
+        var price=btn.parentElement.previousElementSibling.innerHTML.slice(1);
+        var subtotal=price*n;
+        btn.parentElement.nextElementSibling.innerHTML="&yen;"+subtotal.toFixed(2);
+
+        var tds=document.querySelectorAll("tbody tr td:last-child");
+        for(var i= 0,total=0;i<tds.length;i++){
+            total+=parseFloat(tds[i].innerHTML.slice(1));
+        }
+        document.querySelector("tfoot tr td:last-child").innerHTML="&yen;"+total.toFixed(2);
+
+    }
+
+</script>
+</body>
+</html>
