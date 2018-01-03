@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .active{
+            color:red;
+        }
+        .fvb{
+            font-weight: bold;
+        }
+        .fz{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!--<div id="app">-->
+    <!--{{message}}-->
+<!--</div>-->
+
+<!--<div id="app">-->
+    <!--<a v-bind:href="url" v-bind:title="text">{{text}}</a>-->
+    <!--<img v-bind:src="imgsrc" v-bind:alt="imgalt">-->
+<!--</div>-->
+
+
+<!--<div id="app">-->
+    <!--<button v-on:click="e">按钮</button>-->
+    <!--<p>{{text}}</p>-->
+<!--</div>-->
+
+<!--<div id="app">-->
+    <!--<ul>-->
+        <!--<li v-for="list in lists">-->
+            <!--<a href="">{{list}}</a>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</div>-->
+
+
+<!--<div id="app">-->
+    <!--<p>{{text}}</p>-->
+    <!--<input type="text" v-model="text">-->
+<!--</div>-->
+
+
+<!--<div id="app">-->
+    <!--<button v-on:click="e">按钮</button>-->
+    <!--<p v-if="seen">你现在看到我了</p>-->
+<!--</div>-->
+
+<!--<div id="app">-->
+    <!--<p v-if="seen==='1'"> 1 </p>-->
+    <!--<p v-else-if="seen==='2'"> 2 </p>-->
+    <!--<p v-else-if="seen==='3'"> 3 </p>-->
+    <!--<p v-else> not 1/2/3 </p>-->
+<!--</div>-->
+
+
+<!--<div id="app">-->
+    <!--<button v-on:click="e">按钮</button>-->
+    <!--<p class="fz" v-bind:class="classObject">段落</p>-->
+<!--</div>-->
+
+
+
+<!--keyup:键盘属性-->
+<!--<div id="app">-->
+    <!--<button v-on:click.ctrl="e">按钮</button>-->
+    <!--<input type="text" v-on:keyup.enter="e">-->
+<!--</div>-->
+
+<!--计算器-->
+
+<div id="app">
+    <input v-model.number="n1"> +
+    <input v-model.number="n2"> =
+    {{e}}
+</div>
+<script src="js/vue.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

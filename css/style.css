@@ -66,9 +66,9 @@ h3{
 }
 
 /*html静态页面*/
-.html h1,.jquery h1,.java h1,.htmlcss h1{
+.html h1,.jquery h1,.java h1,.htmlcss h1,.vue h1{
     margin-bottom: 40px;
 }
-.html .thumbnail,.jquery .thumbnail,.java .thumbnail,.htmlcss .thumbnail{
+.html .thumbnail,.jquery .thumbnail,.java .thumbnail,.htmlcss .thumbnail,.vue .thumbnail{
     height: 370px;
 }
